@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UC12 - Aula 17">
+    <meta name="keywords" content="HTML,CSS,JavaScript, playing Mario on my browser">
+    <meta name="author" content="aug">
+    <link rel="shortcut icon" type="image/png" href="./icons/mario.png"/>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Mario Games</title>
+</head>
+
+<body>
+    <div class="game-board">
+        <h3>Score: <span id="score">0</span></h3>
+        <img src="./images/mario.gif" alt="Mario" class="Mario">
+        <img src="./images/clouds.png" alt="Nuvem" class="clouds">
+        <img src="./images/pipe.png" alt="Cano" class="pipe">
+
+        <button id="start" class="restart" onclick="start();">Start</button>
+        <button id="restart" class="restart" onclick="window.location.reload();" hidden> Restart</button>
+    </div>
+
+    <footer class="rodape">
+        quem ta correndo é gay
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+.game-board {
+    background-image: linear-gradient(#aff, #acf);
+    border-bottom: 10px solid #aea;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+h3 {
+    background-color: #0b2c09;
+    border: #101111;
+    border-radius: 20px;
+    color: #f5f8f9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    margin: 3px;
+    padding-left: 6px;
+    -webkit-font-smoothing: none;
+    width: 150px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.restart {
+    background-color: #4ce42c;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: x-large;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.restart:hover {
+    background-color: #64fc3c;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    z-index: 0;
+}
+
+.cloudsStarted {
+    animation: clouds-animation 15s infinite linear;
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 165px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.Mario {
+    bottom: 0;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+
+.pipe {
+    bottom: 0;
+    position: absolute;
+    width: 65px;
+}
+
+.pipeStarted {
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.rodape {
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}
